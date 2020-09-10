@@ -6,7 +6,7 @@ module.exports = class BlastCommand extends Command {
     super(client, {
       name: 'blast',
       usage: 'blast <message>',
-      description: 'Sends a message to every server that Calypso is in that has a system channel.',
+      description: 'Sends a message to every server that Chilly is in that has a system channel.',
       type: client.types.OWNER,
       ownerOnly: true,
       examples: ['blast Hello World!']
@@ -25,8 +25,8 @@ module.exports = class BlastCommand extends Command {
         systemChannel.permissionsFor(guild.me).has(['SEND_MESSAGES', 'EMBED_LINKS'])
       ) {
         const embed = new MessageEmbed()
-          .setTitle('Calypso System Message')
-          .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+          .setTitle('Chilly System Message')
+          .setThumbnail('https://cdn.discordapp.com/attachments/748605999249621113/748697388339691550/chilly-profile_image-71507e8984473c5c-300x300.png')
           .setDescription(msg)
           .setTimestamp()
           .setColor(message.guild.me.displayHexColor);

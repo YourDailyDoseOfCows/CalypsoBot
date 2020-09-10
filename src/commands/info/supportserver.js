@@ -7,17 +7,17 @@ module.exports = class SupportServerCommand extends Command {
       name: 'supportserver',
       aliases: ['support', 'ss'],
       usage: 'supportserver',
-      description: 'Displays the invite link to Calypso\'s Discord Support Server.',
+      description: 'Displays the invite link to Chilly\'s Discord Support Server.',
       type: client.types.INFO
     });
   }
   run(message) {
     const embed = new MessageEmbed()
       .setTitle('Support Server')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
-      .setDescription('Click [here](https://discord.gg/pnYVdut) to join the Calypso Support Server!')
+      .setThumbnail('https://cdn.discordapp.com/attachments/748605999249621113/748697388339691550/chilly-profile_image-71507e8984473c5c-300x300.png')
+      .setDescription('Click [here](https://discord.gg/czB9N6h) to join the Chilly Support Server!')
       .addField('Other Links', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
+        '**[Invite Me](https://discord.com/api/oauth2/authorize?client_id=704421143469359164&permissions=8&scope=bot) | ' +
         '[Repository](https://github.com/sabattle/CalypsoBot)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))

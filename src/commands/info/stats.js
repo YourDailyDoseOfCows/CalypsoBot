@@ -10,7 +10,7 @@ module.exports = class StatsCommand extends Command {
       name: 'stats',
       aliases: ['statistics', 'metrics'],
       usage: 'stats',
-      description: 'Fetches Calypso\'s statistics.',
+      description: 'Fetches Chilly\'s statistics.',
       type: client.types.INFO
     });
   }
@@ -35,7 +35,7 @@ module.exports = class StatsCommand extends Command {
       RAM Usage :: ${usedMemMb} MB 
     `;
     const embed = new MessageEmbed()
-      .setTitle('Calypso\'s Statistics')
+      .setTitle('Chilly\'s Statistics')
       .addField('Commands', `\`${message.client.commands.size}\` commands`, true)
       .addField('Aliases', `\`${message.client.aliases.size}\` aliases`, true)
       .addField('Command Types', `\`${Object.keys(message.client.types).length}\` command types`, true)
@@ -43,8 +43,8 @@ module.exports = class StatsCommand extends Command {
       .addField('Server', `\`\`\`asciidoc\n${serverStats}\`\`\``)
       .addField(
         'Links', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
-        '[Support Server](https://discord.gg/pnYVdut) | ' +
+        '**[Invite Me](https://discord.com/api/oauth2/authorize?client_id=704421143469359164&permissions=8&scope=bot) | ' +
+        '[Support Server](https://discord.gg/czB9N6h) | ' +
         '[Repository](https://github.com/sabattle/CalypsoBot)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))

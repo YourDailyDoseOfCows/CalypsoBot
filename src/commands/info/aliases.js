@@ -54,7 +54,7 @@ module.exports = class AliasesCommand extends Command {
 
       embed
         .setTitle(`Alias Type: \`${capitalize(type)}\``)
-        .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/748605999249621113/748697388339691550/chilly-profile_image-71507e8984473c5c-300x300.png')
         .addField(
           `**${emojiMap[type]} [${aliases[type].reduce((a, b) => a + b.split(' ').slice(1).length, 0)}]**`, 
           aliases[type].join('\n')
@@ -76,7 +76,7 @@ module.exports = class AliasesCommand extends Command {
       const prefix = message.client.db.settings.selectPrefix.pluck().get(message.guild.id);
 
       embed
-        .setTitle('Calypso\'s Alias Types')
+        .setTitle('Chilly\'s Alias Types')
         .setDescription(stripIndent`
           **Prefix:** \`${prefix}\`
           **More Information:** \`${prefix}aliases [command type]\`
@@ -98,8 +98,8 @@ module.exports = class AliasesCommand extends Command {
 
       embed.addField(
         '**Links**', 
-        '**[Invite Me](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599) | ' +
-        '[Support Server](https://discord.gg/pnYVdut) | ' +
+        '**[Invite Me](https://discord.com/api/oauth2/authorize?client_id=704421143469359164&permissions=8&scope=bot) | ' +
+        '[Support Server](https://discord.gg/czB9N6h) | ' +
         '[Repository](https://github.com/sabattle/CalypsoBot)**'
       );
 

@@ -11,7 +11,7 @@
 
 <div align=center>
 
-  <a href="https://discord.gg/pnYVdut">
+  <a href="https://discord.gg/czB9N6h">
     <img src="https://discordapp.com/api/guilds/709992782252474429/widget.png?style=shield" alt="shield.png">
   </a>
 
@@ -66,7 +66,7 @@ Calypso also comes packed with a variety of features, such as:
   * **Logging** for mod commands and various events
   * **Moderator only** channels
   * A **starboard**
-  * **Auto kicking** when a warn limit is reached
+  * **Auto kicking** when a warn limit is reached`
   * Auto **random colors** when members join
   * Per **command disabling**
   * And much more! There are over **30+** settings to tweak!

@@ -57,16 +57,16 @@ module.exports = (client, message) => {
       !modChannelIds.includes(message.channel.id)
     ) {
       const embed = new MessageEmbed()
-        .setTitle('Hi, I\'m Calypso. Need help?')
-        .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+        .setTitle('Hi, I\'m Chilly. Need help?')
+        .setThumbnail('https://cdn.discordapp.com/attachments/748605999249621113/748697388339691550/chilly-profile_image-71507e8984473c5c-300x300.png')
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
         .addField('Invite Me', oneLine`
           You can add me to your server by clicking 
-          [here](https://discordapp.com/oauth2/authorize?client_id=416451977380364288&scope=bot&permissions=403008599)!
+          [here](https://discord.com/api/oauth2/authorize?client_id=704421143469359164&permissions=8&scope=bot)!
         `)
         .addField('Support', oneLine`
           If you have questions, suggestions, or found a bug, please join the 
-          [Calypso Support Server](https://discord.gg/pnYVdut)!
+          [Chilly Support Server](https://discord.gg/czB9N6h)!
         `)
         .setFooter('DM Nettles#8880 to speak directly with the developer!')
         .setColor(message.guild.me.displayHexColor);

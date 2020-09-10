@@ -8,7 +8,7 @@ module.exports = class UptimeCommand extends Command {
       name: 'uptime',
       aliases: ['up'],
       usage: 'uptime',
-      description: 'Fetches Calypso\'s current uptime.',
+      description: 'Fetches Chilly\'s current uptime.',
       type: client.types.INFO
     });
   }
@@ -20,8 +20,8 @@ module.exports = class UptimeCommand extends Command {
     const seconds = (d.seconds() == 1) ? `${d.seconds()} second` : `${d.seconds()} seconds`;
     const date = moment().subtract(d, 'ms').format('dddd, MMMM Do YYYY');
     const embed = new MessageEmbed()
-      .setTitle('Calypso\'s Uptime')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+      .setTitle('Chilly\'s Uptime')
+      .setThumbnail('https://cdn.discordapp.com/attachments/748605999249621113/748697388339691550/chilly-profile_image-71507e8984473c5c-300x300.png')
       .setDescription(`\`\`\`prolog\n${days}, ${hours}, ${minutes}, and ${seconds}\`\`\``)
       .addField('Date Launched', date) 
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
